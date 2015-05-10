@@ -1,0 +1,13 @@
+<ion-view view-title="Profil">
+  <ion-content>
+      <h2>{{profil.email}}</h2>
+      <h3>{{profil.statustext}}</h3>
+        <ion-list>
+            <ion-item class="item-input">
+                <input type="text" placeholder="Cooler Statustext..." ng-model="profilneu.statustext">
+            </ion-item>  
+        </ion-list>
+      <button class="button button-block button-positive" ng-click="profilUpdate()" >Status ändern!</button>
+      <button class="button button-block button-positive" ng-click="profilLogout()" >Logout!</button>
+  </ion-content>
+</ion-view>

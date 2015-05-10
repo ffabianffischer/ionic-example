@@ -1,0 +1,14 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Neue Frage...</h1>
+        <button class="button button-clear" ng-click="modal.remove()"><span class="icon ion-close"></span></button>
+    </ion-header-bar>
+    <ion-content ng-controller="NeueFrageCtrl">
+        <ion-list>
+            <ion-item class="item-input">
+                <input type="text" placeholder="Bla bla bla..." ng-model="$parent.fragetext">
+            </ion-item>        
+        </ion-list>
+        <button class="button button-block button-positive" ng-click="neueFrageSpeichern()" >Frage speichern</button>
+    </ion-content>
+</ion-modal-view>

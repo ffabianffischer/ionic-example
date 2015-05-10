@@ -1,0 +1,12 @@
+<ion-view view-title="Frage">
+  <ion-content>
+    <h1>{{frage.id}} {{frage.text}}</h1>
+    <button class="button button-block button-positive" ng-click="frageLoeschen()" >Frage löschen</button>
+    <ion-list>
+        <ion-item class="item-input">
+            <input type="text" placeholder="Bla bla bla..." ng-model="data.text">     
+        </ion-item>        
+    </ion-list>
+    <button class="button button-block button-positive" ng-click="frageAendern()" >Frage ändern</button>
+  </ion-content>
+</ion-view>

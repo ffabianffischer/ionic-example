@@ -1,0 +1,13 @@
+<ion-view view-title="Registrierung">
+  <ion-content>
+      <ion-list>
+            <ion-item class="item-input">
+                <input type="email" placeholder="Email" ng-model="credentials.email">
+            </ion-item>  
+            <ion-item class="item-input">
+                <input type="password" placeholder="Passwort" ng-model="credentials.password">
+            </ion-item> 
+        </ion-list>
+        <button class="button button-block button-positive" ng-click="registrierungOnline()" >Registrieren!</button>
+  </ion-content>
+</ion-view>

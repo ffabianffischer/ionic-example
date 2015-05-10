@@ -1,0 +1,13 @@
+<ion-view view-title="Fragen">
+  <ion-content>
+      <button on-touch="neueFrage()" class="button button-block button-positive">Neue Frage</button>
+      <ion-refresher on-refresh="fragenladen()"></ion-refresher>
+      <ion-list>
+          <ion-item class="item-icon-right" ng-repeat="frage in fragen" href="#/tab/fragen/{{frage.id}}">
+                <h2>{{frage.text}}</h2>
+                <p>{{frage.id}}</p>
+                <i class="icon ion-chevron-right"></i>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
